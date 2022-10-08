@@ -1,6 +1,6 @@
 const { User, Thought, Reaction } = require('../models');
 
-module.export = {
+module.exports = {
   getThought(req, res) {},
   getSingleThought(req, res) {},
   createThought(req, res) {},
