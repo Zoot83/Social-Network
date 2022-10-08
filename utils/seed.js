@@ -14,4 +14,5 @@ connection.once('open', async () => {
   await Thought.deleteMany({});
 
   await User.collection.insertMany(userData);
+  process.exit(0);
 });
