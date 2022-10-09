@@ -47,12 +47,7 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
   deleteThought(req, res) {
-    Thought.findByIdAndDelete({ _id: req.params.userId })
-      .then((thought) =>
-        !thought
-          ? res.status(404).json({ message: 'No thought with that ID' })
-          : User.findByIdAndDelete({ _id: { $in: user.thoughts } })
-      )
+    Thought.findByIdAndDelete({ _id: req.params.thoughtId })
       .then(() => res.json({ message: 'User and thoughts deleted!' }))
       .catch((err) => res.status(500).json(err));
   },

@@ -27,6 +27,8 @@ Website: https://zoot83.github.io/Social-Network/
 
 ## Demo
 
+Link to demo: https://drive.google.com/file/d/1uTmFZEG1REsAfSelWuOmjP170l-DWBJ1/view
+
 ## Usage/Examples
 
 In this example I am showing how I used the functions defined for the specific route. By bundling the routes into one line and defining the
